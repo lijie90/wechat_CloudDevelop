@@ -1,0 +1,58 @@
+<view class="introduce">
+  <view class="detailleft">
+    <image src="{{bookDetailData.imgurl}}"></image>
+  </view>
+  <view class="detailright">
+    <view>
+      <view class="name">{{bookDetailData.name}}</view>
+      <view>
+        <text>{{bookDetailData.autho}}</text>
+      </view>
+      <view>
+        <text>{{bookDetailData.status}}</text>
+      </view>
+      <view>
+        <text>{{bookDetailData.lastTime}}</text>
+      </view>
+      <view class="lastNew">
+        最新：
+        <text data-url="lastSectionUrl">{{bookDetailData.lastSection}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="joinBook"><van-button type="warning" size="small" bindtap="joinBook" data-url="{{pageData[0].sectionUrl}}">加入书架</van-button></view>
+<!-- 内容简介 -->
+<view class="brief">
+  <view class="introduceTitle">内容简介</view>
+  <view class="introduceContent">{{bookDetailData.bookDetail}}</view>
+</view>
+<!-- 最新章节 -->
+<view class="lastsection">
+  <view class="last">最新章节</view>
+  <view class="section" wx:for="{{lastData}}" wx:key="" data-url="{{item.sectionUrl}}" bindtap="navtoUrl">{{item.sectionName}}</view>
+</view>
+<!-- 所有章节 -->
+<view class="lastsection">
+  <view class="last">章节列表</view>
+  <view class="section" wx:for="{{pageData}}" wx:key="" data-url="{{item.sectionUrl}}" bindtap="navtoUrl">{{item.sectionName}}</view>
+</view>
+<!-- 分页模块 -->
+<view class="listPage">
+  <view class="pre">
+    <button type="warn" size="mini" data-url="{{pre}}" bindtap="prePage" wx:if="{{pre}}">上一页</button>
+    <button type="warn" size="mini"  disabled="false" bindtap="warn" wx:else>上一页</button>
+  </view>
+  <view class="section">
+    <picker mode="selector" bindchange="bindPickerChange" value="{{page-1}}" range-key="{{'num'}}" range="{{pageArray}}">
+      <view class="picker">
+        第 {{pageArray[page].num-1}} 页
+      </view>
+    </picker>
+  </view>
+  <view class="next">
+    <button type="warn" size="mini" data-url="{{next}}"  wx:if="{{next}}" bindtap="nextPage">下一页</button>
+    <button type="warn" size="mini"  wx:else  disabled="false" bindtap="warn">下一页</button>
+
+  </view>
+</view>

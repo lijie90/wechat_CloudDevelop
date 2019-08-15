@@ -1,0 +1,20 @@
+<view>
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  show-action
+  bind:search="onSearch"
+/>
+</view>
+<view class="listBook" wx:if="{{listShow}}">
+<view class="headeritem">
+<view class="no">序号</view>
+<view class="name">作品名称</view>
+<view class="autho">作者</view>
+</view>
+<view class="headeritem" wx:for="{{listData}}" wx:key="" wx:if="{{index>0}}">
+<view class="no">{{index}}</view>
+<view class="name" data-url="{{item.bookUrl}}" data-name="{{item.bookName}}" bindtap="skip">{{item.bookName}}</view>
+<view class="autho">{{item.autho}}</view>
+</view>
+</view>

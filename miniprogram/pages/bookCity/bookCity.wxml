@@ -1,0 +1,31 @@
+<!-- <view>
+<button bindtap="getList">请求列表</button>
+</view> -->
+<view class="header">
+<view class="hot">热榜推荐</view>
+<view class="more" bindtap="toSearch">点击搜索更多小说</view>
+</view>
+
+<view class="hotlist" wx:for="{{hotdata}}" wx:key="{{index}}"  data-url="{{item.url}}" bindtap="skip">
+  <view class="itemleft">
+    <image src="{{item.imgurl}}"></image>
+  </view>
+  <view class="itemright">
+    <view class="authotop">
+    <!-- 名字、作者 -->
+      <text class="bookname">{{item.name}}</text>
+      <text class="autho">{{item.autho}}</text>
+    </view>
+    <!-- 描述 -->
+     <view class="detail">{{item.detail}}</view>
+  </view>
+</view>
+<!-- 推荐分类 -->
+<view class="classify" wx:for="{{classtyf}}" wx:key="">
+<!-- 分类名称 -->
+  <view class="classifyname">{{item.classifyList}}</view>
+  <view class="classifyitem" wx:for="{{item.data}}" wx:key="" data-url="{{item.url}}" bindtap="skip">
+  <text class="sname">{{item.name}}</text>
+  <text class="sautho">{{item.autho}}</text>
+  </view>
+</view>

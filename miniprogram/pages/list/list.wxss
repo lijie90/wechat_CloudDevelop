@@ -1,0 +1,35 @@
+.container{
+  /* padding: 0 12rpx 12rpx 12rpx; */
+}
+.myBook{
+  text-align: center;
+  background: #d4eaf2;
+  font-weight: bold;
+  font-size: 32rpx;
+  width: 100%;
+  height: 56rpx;
+  line-height: 56rpx;
+  color: #2a779d;
+}
+.item{
+  display: flex;
+  width: 100%;
+}
+.item .left{
+  width: 200rpx;
+  height: 260rpx;
+  margin: 16rpx 0;
+  padding: 12rpx;
+}
+.item .left image{
+  width: 200rpx;
+  height: 260rpx;
+}
+.item .right{
+  flex: 1;
+  margin: 16rpx 0;
+  line-height: 260rpx;
+  font-size: 28rpx;
+  text-align: left;
+  margin-left: 100rpx;
+}

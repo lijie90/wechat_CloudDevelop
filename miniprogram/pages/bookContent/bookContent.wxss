@@ -1,0 +1,35 @@
+page{
+  background-color: #f1e5c9;
+}
+.header{
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 20rpx 12rpx 40rpx 12rpx;
+  padding: 0 12rpx;
+  background: #d4eaf2;
+  text-align: center;
+}
+/* #f1e5c9 */
+.header text{
+  padding-left: 20rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #888;
+}
+.content{
+  padding: 0 12rpx;
+  font-size: 28rpx;
+  letter-spacing: 4rpx;
+  line-height: 48rpx;
+  color: #222;
+}
+.sectionName{
+  /* padding: 20rpx; */
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #888;
+  text-align: center;
+  padding: 12rpx;
+  margin: 20rpx 12rpx 40rpx 12rpx;
+  background: #d4eaf2;
+}

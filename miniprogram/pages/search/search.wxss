@@ -1,0 +1,25 @@
+.listBook{
+  padding: 20rpx;
+  color: #555;
+  font-size: 28rpx;
+}
+.headeritem{
+  display: flex;
+  background: #fef9ef;
+}
+.headeritem view{
+  margin: 20rpx 10rpx;
+}
+.headeritem .autho{
+  flex: 2;
+  text-align: left;
+}
+.headeritem .no{
+  flex: 1;
+  text-align: center;
+}
+.headeritem .name{
+  flex: 3;
+  text-align: left;
+  color: #6f78a7;
+}

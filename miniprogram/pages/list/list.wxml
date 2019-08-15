@@ -1,0 +1,11 @@
+<view class="container">
+<view class="myBook">我的书架</view>
+<view class="item" wx:for="{{bookItem}}" wx:key="" data-name="{{item.bookName}}" dat-imgUrl="{{item.imgurl}}" data-url="{{item.bookUrl}}" bindtap="navTo" bindlongpress="delete">
+ <view class="left">
+ <image src="{{item.imgurl}}"></image>
+ </view>
+ <view class="right">
+<text>{{item.bookName}}</text>
+ </view>
+</view>
+</view>

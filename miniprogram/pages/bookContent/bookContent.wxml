@@ -1,0 +1,9 @@
+<view class="sectionName">{{sectionName}}</view>
+<view class="content">
+<text>{{contentH}}</text>
+</view>
+<view class="header">
+<text class="pre" data-url="{{pre}}" bindtap="prePage">上一章</text>
+<text class="catalog" data-url="{{catalog}}" bindtap="catalog">目录</text>
+<text class="next" data-url="{{next}}" bindtap="nextPage">下一章</text>
+</view>

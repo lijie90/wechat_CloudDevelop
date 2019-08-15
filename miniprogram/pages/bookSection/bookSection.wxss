@@ -1,0 +1,113 @@
+.introduce {
+  display: flex;
+  padding: 12rpx;
+  margin-top: 30rpx;
+}
+
+.detailleft {
+  width: 200rpx;
+  height: 260rpx;
+}
+
+
+.detailleft image {
+  width: 200rpx;
+  height: 260rpx;
+}
+
+.detailright {
+  flex: 1;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  color: #888;
+}
+
+.detailright view {
+  margin: 12rpx 0;
+}
+.detailright .lastNew{
+  width: 500rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.detailright .name {
+  font-size: 32rpx;
+  color: #222;
+}
+
+/* 内容简介 */
+
+.brief {
+  padding: 0 12rpx;
+  margin: 30rpx 0;
+}
+
+.introduceTitle {
+  height: 70rpx;
+  line-height: 70rpx;
+  background: #68aac2;
+  color: #fff;
+  font-size: 32rpx;
+  /* font-weight: 600; */
+  padding: 0 12rpx;
+}
+
+.introduceContent {
+  padding: 20rpx;
+  color: #888;
+  font-size: 28rpx;
+}
+
+.lastsection {
+  padding: 0 12rpx;
+  margin: 0 0 30rpx 0;
+  color: #222;
+  font-size: 28rpx;
+}
+
+.lastsection .last {
+  height: 70rpx;
+  line-height: 70rpx;
+  background: #68aac2;
+  color: #fff;
+  font-size: 32rpx;
+  padding: 0 12rpx;
+}
+
+.lastsection .section {
+  margin-left: 20rpx;
+  padding: 20rpx 0;
+  letter-spacing: 2rpx;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* f分页 */
+.listPage{
+  display: flex;
+  text-align: center;
+  margin: 20rpx;
+}
+.picker{
+  font-size: 28rpx;
+  color: #888;
+}
+.listPage .pre{
+flex: 1
+}
+.listPage .section{
+flex: 2;
+height: 68rpx;
+line-height: 68rpx;
+}
+.listPage .next{
+flex: 1
+}
+
+
+.joinBook{
+  padding:0 12rpx;
+}
